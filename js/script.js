@@ -3,22 +3,15 @@ const itemsHeight = document.querySelector(".ani-wrap").clientHeight
 let items = gsap.utils.toArray(".cardss");
 
 gsap.to(".ani-wrap", {
-    y: -itemsHeight + 700,
-    // x: innerWidth,
+    y: -itemsHeight + 500,
     ease: "none",
     scrollTrigger: {
       trigger: ".section-3",
-      start: "-100px top",
-      end: itemsHeight - 700,
+      start: "top top",
+      end: itemsHeight - 500,
       scrub: 1,
       pin: true,
       pinSpacing: false,
-      //markers: true,
-      // snap: {
-      //     snapTo: 1 / (items.length - 1),
-      //     duration: 0.2,
-      //     delay : 0,
-      // }
     }
   });
 
